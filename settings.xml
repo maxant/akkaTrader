@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" 
+          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+          xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+  <localRepository>d:/local-maven-repo</localRepository>
+  <profiles>
+        <profile>
+            <id>default</id>
+            <repositories>
+				<repository>
+                    <id>maven.central</id>
+                    <name>maven.central</name>
+                    <url>http://repo1.maven.org/maven/</url>
+				</repository>
+            </repositories>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+        </profile>
+	</profiles>
+    <activeProfiles>
+        <activeProfile>default</activeProfile>
+    </activeProfiles>
+</settings>
